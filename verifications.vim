@@ -2,14 +2,12 @@
 :let outputString = ""
 
 :if fex > 3.15
-	let outputString = "The value is bigger than pi!"
-:elseif fex
-
+	:call setOutputString("The value is bigger than pi!")
 :else
-	:let outputString = "The value is smaller than pi!"
+	:call setOutputString("The value is smaller or equal to pi!")
 :endif
 
 :function setOutputString(string)
-	let outputString = string
+	:let outputString = string
 
 :echo outputString
