@@ -1,13 +1,14 @@
-:let fex = 3.1415
-:let outputString = ""
+:let Fex = 3.1415
+:let OutputString = ""
 
-:if fex > 3.15
-	:call setOutputString("The value is bigger than pi!")
+:function SetOutputString(Output)
+	:let OutputString = Output
+	:endfunction
+
+:if Fex > 3.15
+	:call SetOutputString("The value is bigger than pi!")
 :else
-	:call setOutputString("The value is smaller or equal to pi!")
+	:call SetOutputString("The value is smaller or equal to pi!")
 :endif
 
-:function setOutputString(string)
-	:let outputString = string
-
-:echo outputString
+:echo OutputString
