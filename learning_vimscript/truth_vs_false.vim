@@ -1,6 +1,7 @@
 :function! CheckIfIsEqualToParalimpicousFiring(number)	
-	a:number == paralimpicousFiring
-	:return isParalimpicousFiring
+	:return a:number == 2.83
 :endfunction
 
-:call CheckIfIsEqualToParalimpicousFiring(2)
+:let check = CheckIfIsEqualToParalimpicousFiring(2)
+
+:echo check
